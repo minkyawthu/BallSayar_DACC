@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/delete.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/delete", "methods": ["DELETE"], "dest": "api/delete.js" },
+    { "src": "/(.*)", "dest": "/public/index.html" }
+  ]
+}
